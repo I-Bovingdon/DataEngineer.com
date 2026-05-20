@@ -3,170 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Data Engineer — diseño e implementación de pipelines y plataformas de datos escalables.">
-    <title>Perfil Profesional - Data Engineer</title>
+    <meta name="description" content="Sitio personal de un Data Engineer que diseña plataformas y pipelines de datos escalables.">
+    <title>Portafolio de Data Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">DE</h1>
+            <div class="container nav-inner">
+                <a class="logo" href="index_es.html">Data Engineer</a>
                 <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                    <span class="sr-only">Abrir menú</span>
+                    <span class="sr-only">Abrir menú móvil</span>
                     <span class="hamburger"></span>
                 </button>
                 <ul id="primary-navigation" class="nav-links">
-                    <li><a href="#about">Sobre Mí</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
                     <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li><a class="lang-switch" href="index.html">English</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <div class="hero-inner">
-                    <div class="hero-content">
-                        <h2>Data Engineer</h2>
-                        <p class="subtitle">Construyendo pipelines y plataformas de datos escalables</p>
-                        <div class="hero-ctas">
-                            <a href="#contact" class="btn btn-primary">Contactar</a>
-                            <a href="https://github.com" class="btn btn-secondary" target="_blank" rel="noopener">Ver GitHub</a>
-                            <a href="#" class="btn btn-secondary">Descargar CV</a>
-                        </div>
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="eyebrow">DATA ENGINEER</p>
+                    <h1>Construyo plataformas de datos modernas para equipos ágiles.</h1>
+                    <p class="subtitle">Desde pipelines ETL escalables hasta analítica en la nube, diseño y opero sistemas de datos que convierten información cruda en resultados confiables.</p>
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-primary">Contáctame</a>
+                        <a href="index.html" class="btn btn-secondary">English version</a>
                     </div>
-                    <div class="hero-image">
-                        <img src="image/Profile.png" alt="Foto profesional" loading="lazy">
-                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/profile.jpg" alt="Foto de perfil" loading="lazy">
                 </div>
             </div>
         </section>
 
-        <!-- Sobre Mí -->
         <section id="about" class="section about">
             <div class="container">
-                <h3>Sobre Mí</h3>
-                <p>Soy Data Engineer con experiencia en diseño e implementación de pipelines ETL/ELT, orquestación de flujos, optimización de almacenamiento y despliegue en la nube. Me centro en construir plataformas reproducibles y observables que permiten a equipos de datos generar valor rápido y seguro.</p>
+                <h3>Sobre mí</h3>
+                <p>Soy un Data Engineer especializado en el ciclo completo de datos: ingestión, orquestación, almacenamiento y analítica. Trabajo con herramientas en la nube y automatización para que los datos sean fiables, accesibles y escalables.</p>
                 <div class="highlight-box">
-                    <p><strong>Especialización:</strong> ETL/ELT, Apache Airflow, Spark, Kafka, SQL, Python, cloud (AWS/GCP)</p>
+                    <p><strong>Áreas de experiencia:</strong> pipelines ETL/ELT, Airflow, Spark, Kafka, SQL, Python, cloud (AWS/GCP), gobernanza de datos.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Tech Stack -->
-        <section id="stack" class="section tech-stack">
+        <section id="projects" class="section projects">
             <div class="container">
-                <h3>Tecnologías</h3>
-                <div class="stack-list">
-                    <span>AWS</span>
-                    <span>GCP</span>
-                    <span>Apache Spark</span>
-                    <span>Airflow</span>
-                    <span>Kafka</span>
-                    <span>Postgres</span>
-                    <span>Docker</span>
-                    <span>Terraform</span>
+                <h3>Proyectos destacados</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h4>Pipeline de datos operacionales</h4>
+                        <p>Diseñé un pipeline con Airflow para mover datos a un lago analítico con controles de calidad automáticos.</p>
+                        <a href="#" class="btn btn-secondary">Ver estudio</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Streaming en tiempo real</h4>
+                        <p>Construí una solución con Kafka para análisis casi en tiempo real y alertas automáticas.</p>
+                        <a href="#" class="btn btn-secondary">Ver estudio</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Data Lake en la nube</h4>
+                        <p>Implementé una arquitectura de lago de datos con catálogo, versionado y control de costes.</p>
+                        <a href="#" class="btn btn-secondary">Ver estudio</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Habilidades -->
         <section id="skills" class="section skills">
             <div class="container">
-                <h3>Habilidades Técnicas</h3>
+                <h3>Habilidades clave</h3>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <h4>Análisis de Datos</h4>
-                        <p>Análisis estadístico, EDA, modelado predictivo</p>
+                        <h4>Data Engineering</h4>
+                        <p>Pipelines, modelado de datos y orquestación.</p>
                     </div>
                     <div class="skill-card">
-                        <h4>Herramientas BI</h4>
-                        <p>Power BI, Tableau, Google Analytics</p>
+                        <h4>Cloud y DevOps</h4>
+                        <p>AWS, GCP, contenedores e infraestructura como código.</p>
                     </div>
                     <div class="skill-card">
                         <h4>Programación</h4>
-                        <p>Python, SQL, R, Excel avanzado</p>
+                        <p>Python, SQL, Spark y scripting.</p>
                     </div>
                     <div class="skill-card">
-                        <h4>Bases de Datos</h4>
-                        <p>MySQL, PostgreSQL, MongoDB</p>
+                        <h4>Observabilidad</h4>
+                        <p>Métricas, logs y monitorización en producción.</p>
                     </div>
                     <div class="skill-card">
-                        <h4>Visualización</h4>
-                        <p>Dashboards interactivos, infografías</p>
-                    </div>
-                    <div class="skill-card">
-                        <h4>Soft Skills</h4>
-                        <p>Comunicación, pensamiento analítico, liderazgo</p>
+                        <h4>Comunicación</h4>
+                        <p>Documentación, alineación con equipos y entrega ágil.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Proyectos -->
-        <section id="projects" class="section projects">
-            <div class="container">
-                <h3>Proyectos Destacados</h3>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h4>Pipeline ETL Escalable</h4>
-                        <p>Implementación de pipeline con Airflow y Spark para procesamiento batch de  terabytes diarios.</p>
-                        <a href="#" class="btn btn-secondary">Ver repositorio</a>
-                    </div>
-                    <div class="project-card">
-                        <h4>Streaming con Kafka</h4>
-                        <p>Arquitectura de ingestión en tiempo real con Kafka y consumidores en Python/Spark.</p>
-                        <a href="#" class="btn btn-secondary">Ver repositorio</a>
-                    </div>
-                    <div class="project-card">
-                        <h4>Data Lake en la Nube</h4>
-                        <p>Diseño de catálogo y gobierno de datos con almacenamiento optimizado para analítica.</p>
-                        <a href="#" class="btn btn-secondary">Ver repositorio</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experiencia -->
-        <section id="experience" class="section experience">
-            <div class="container">
-                <h3>Experiencia</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h4>Senior Analista de Datos</h4>
-                        <p class="period">2022 - Presente</p>
-                        <p>Líder de proyecto de transformación digital, gestión de bases de datos y creación de dashboards estratégicos para la dirección ejecutiva.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Analista de Datos Junior</h4>
-                        <p class="period">2020 - 2022</p>
-                        <p>Análisis de datos operacionales, reportes automatizados y soporte en proyectos de business intelligence.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Asistente Analítico</h4>
-                        <p class="period">2019 - 2020</p>
-                        <p>Recopilación y limpieza de datos, análisis exploratorio y documentación de procesos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contacto -->
         <section id="contact" class="section contact">
             <div class="container">
                 <h3>Contacto</h3>
-                <p>¿Interesado en colaborar? Envíame un mensaje</p>
+                <p>¿Quieres hablar de tu próximo proyecto de datos? Hablemos.</p>
                 <div class="contact-info">
-                    <a href="mailto:tu@email.com" class="btn btn-secondary">Email</a>
-                    <a href="https://linkedin.com" class="btn btn-secondary">LinkedIn</a>
-                    <a href="https://github.com" class="btn btn-secondary">GitHub</a>
+                    <a href="mailto:hi@example.com" class="btn btn-secondary">Email</a>
+                    <a href="https://linkedin.com/in/yourprofile" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/yourprofile" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <div class="contact-details">
+                    <div><strong>Email:</strong> hi@example.com</div>
+                    <div><strong>Phone:</strong> +1 234 567 8900</div>
+                    <div><strong>Location:</strong> Remote / Madrid</div>
                 </div>
             </div>
         </section>
@@ -174,32 +127,10 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Analista de Datos. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Portafolio de Data Engineer. Construido para equipos de datos modernos.</p>
         </div>
     </footer>
-    <!-- Python Runner Section (Pyodide) -->
-    <section id="python-runner" class="section runner-section">
-        <div class="container runner">
-            <div class="runner-left">
-                <h3>Ejecutar Python (en el navegador)</h3>
-                <p>Selecciona archivos Python locales (.py) y ejecútalos con Pyodide.</p>
-                <input id="file-input" type="file" accept=".py" multiple />
-                <div id="file-list" class="file-list"></div>
-                <div class="runner-controls">
-                    <button id="run-btn" class="btn btn-primary">Ejecutar archivo seleccionado</button>
-                    <button id="clear-btn" class="btn btn-secondary">Limpiar salida</button>
-                </div>
-                <p class="note">Nota: librerías con extensiones nativas (C) pueden no estar disponibles.</p>
-            </div>
-            <div class="runner-right">
-                <h3>Salida</h3>
-                <pre id="output" class="output" aria-live="polite"></pre>
-            </div>
-        </div>
-    </section>
 
-    <!-- Pyodide and app script -->
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
     <script src="WEB/app.js"></script>
 </body>
 </html>

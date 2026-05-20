@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Profile - Ismael Bovingdon Castillejo</title>
+    <meta name="description" content="Data Engineer — diseño e implementación de pipelines y plataformas de datos escalables.">
+    <title>Perfil Profesional - Data Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
             <div class="container">
-                <h1 class="logo">IBC</h1>
-                <ul class="nav-links">
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://i-bovingdon.github.io/DataAnalyst.es/" target="_blank"><img src="https://flagcdn.com/16x12/es.png" alt="Spanish Flag"> Spanish</a></li>
+                <h1 class="logo">DE</h1>
+                <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Abrir menú</span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primary-navigation" class="nav-links">
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,13 +32,18 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <img src="image/Profile.png" alt="Photo of Ismael Bovingdon" class="profile-photo">
-                    <h2>Ismael Bovingdon Castillejo</h2>
-                    <p class="subtitle">Mechanical Engineer | Data Analyst | Master's Degree in Data Science</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary btn-connect">Connect</a>
-                        <a href="image/CV-EN-ISMAEL-BOVINGDON.pdf" download class="btn btn-primary btn-cv"><i class="fas fa-file-pdf"></i> CV</a>
+                <div class="hero-inner">
+                    <div class="hero-content">
+                        <h2>Data Engineer</h2>
+                        <p class="subtitle">Construyendo pipelines y plataformas de datos escalables</p>
+                        <div class="hero-ctas">
+                            <a href="#contact" class="btn btn-primary">Contactar</a>
+                            <a href="https://github.com" class="btn btn-secondary" target="_blank" rel="noopener">Ver GitHub</a>
+                            <a href="#" class="btn btn-secondary">Descargar CV</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/profile.jpg" alt="Foto profesional" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -43,10 +52,27 @@
         <!-- Sobre Mí -->
         <section id="about" class="section about">
             <div class="container">
-                <h3>About me</h3>
-                <p>Mechanical Engineer with experience in backend development in financial environments, technical management, and data analysis in industrial projects. Currently pursuing a Master's in Data Science and Big Data, oriented towards junior/entry-level roles as a Data Analyst or Data Engineer. Analytical, structured profile focused on delivering value through data-driven decision-making for business and industry.</p>
+                <h3>Sobre Mí</h3>
+                <p>Soy Data Engineer con experiencia en diseño e implementación de pipelines ETL/ELT, orquestación de flujos, optimización de almacenamiento y despliegue en la nube. Me centro en construir plataformas reproducibles y observables que permiten a equipos de datos generar valor rápido y seguro.</p>
                 <div class="highlight-box">
-                    <p><strong>Specialization:</strong> SQL, Python, Data Analysis, Storytelling, Business Intelligence</p>
+                    <p><strong>Especialización:</strong> ETL/ELT, Apache Airflow, Spark, Kafka, SQL, Python, cloud (AWS/GCP)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="stack" class="section tech-stack">
+            <div class="container">
+                <h3>Tecnologías</h3>
+                <div class="stack-list">
+                    <span>AWS</span>
+                    <span>GCP</span>
+                    <span>Apache Spark</span>
+                    <span>Airflow</span>
+                    <span>Kafka</span>
+                    <span>Postgres</span>
+                    <span>Docker</span>
+                    <span>Terraform</span>
                 </div>
             </div>
         </section>
@@ -54,36 +80,56 @@
         <!-- Habilidades -->
         <section id="skills" class="section skills">
             <div class="container">
-                <h3>Technical Skills</h3>
+                <h3>Habilidades Técnicas</h3>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <h4>Data & Analytics</h4>
-                        <p>SQL (complex queries, subqueries, Snowflake)<br>
-Python (pandas, numpy, Matplotlibt, scipy.stats, statsmodels)<br>
-Exploratory Data Analysis (EDA)<br>
-Data Visualization (Power BI, Tableau)</p>
+                        <h4>Análisis de Datos</h4>
+                        <p>Análisis estadístico, EDA, modelado predictivo</p>
                     </div>
                     <div class="skill-card">
-                        <h4>Fundamentals</h4>
-                        <p>Descriptive Statistics<br>
-Data Modeling<br>
-ETL Concepts<br>
-Relational Databases</p>
+                        <h4>Herramientas BI</h4>
+                        <p>Power BI, Tableau, Google Analytics</p>
                     </div>
                     <div class="skill-card">
-                        <h4>Other Competencies</h4>
-                        <p>Git (version control)<br>
-Advanced Excel<br>
-Technical Documentation</p>
+                        <h4>Programación</h4>
+                        <p>Python, SQL, R, Excel avanzado</p>
                     </div>
-                    <a href="https://github.com/I-Bovingdon?tab=repositories" target="_blank" class="skill-card skill-card-projects">
-                        <h4>Projects</h4>
-                        <ul class="projects-list">
-                            <li>Netflix Streaming Data Analysis</li>
-                            <li>Global Life Expectancy Prediction</li>
-                            <li>Interactive Hostnames Dashboard</li>
-                        </ul>
-                    </a>
+                    <div class="skill-card">
+                        <h4>Bases de Datos</h4>
+                        <p>MySQL, PostgreSQL, MongoDB</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Visualización</h4>
+                        <p>Dashboards interactivos, infografías</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Soft Skills</h4>
+                        <p>Comunicación, pensamiento analítico, liderazgo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h3>Proyectos Destacados</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h4>Pipeline ETL Escalable</h4>
+                        <p>Implementación de pipeline con Airflow y Spark para procesamiento batch de  terabytes diarios.</p>
+                        <a href="#" class="btn btn-secondary">Ver repositorio</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Streaming con Kafka</h4>
+                        <p>Arquitectura de ingestión en tiempo real con Kafka y consumidores en Python/Spark.</p>
+                        <a href="#" class="btn btn-secondary">Ver repositorio</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Data Lake en la Nube</h4>
+                        <p>Diseño de catálogo y gobierno de datos con almacenamiento optimizado para analítica.</p>
+                        <a href="#" class="btn btn-secondary">Ver repositorio</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -91,43 +137,22 @@ Technical Documentation</p>
         <!-- Experiencia -->
         <section id="experience" class="section experience">
             <div class="container">
-                <h3>Work Experience</h3>
+                <h3>Experiencia</h3>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h4>Health, Safety and Risk Prevention Manager – Engineering Projects</h4>
-                        <p class="period">2024 - 2025 | ARPO Empresa Constructora S.A.</p>
-                        <p>Analysis and control of operational and documentary data during project design and execution phases. Monitoring compliance indicators and preparing technical reports for decision-making. Coordination of multiple stakeholders and standardization of control and reporting processes.</p>
+                        <h4>Senior Analista de Datos</h4>
+                        <p class="period">2022 - Presente</p>
+                        <p>Líder de proyecto de transformación digital, gestión de bases de datos y creación de dashboards estratégicos para la dirección ejecutiva.</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Senior Health & Safety Prevention Technician</h4>
-                        <p class="period">2023 - 2024 | Ibersys Seguridad y Salud S.L.</p>
-                        <p>Management and analysis of technical information in industrial, energy, and construction projects. Development of structured reports and improvement proposals based on operational data. Work in complex and multidisciplinary environments (energy, industry, public sector).</p>
+                        <h4>Analista de Datos Junior</h4>
+                        <p class="period">2020 - 2022</p>
+                        <p>Análisis de datos operacionales, reportes automatizados y soporte en proyectos de business intelligence.</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Backend Developer - Mainframe (COBOL, DB2 SQL, JavaScript)</h4>
-                        <p class="period">2018 - 2022 | BBVA Technology S.L.</p>
-                        <p>Development and maintenance of batch and online financial applications in critical environments. Management and exploitation of DB2 SQL databases with millions of records. Incident analysis, data validation, and process improvement. Work under quality, security, and version control standards.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Formación -->
-        <section id="education" class="section education">
-            <div class="container">
-                <h3>Education</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h4>Master's Degree in Data Science, Big Data & Business Analytics</h4>
-                        <p class="period">Complutense University of Madrid</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Master's Degree in Health & Safety Prevention</h4>
-                        <p class="period">University of Francisco de Vitoria</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Bachelor's Degree in Mechanical Industrial Engineering</h4>
-                        <p class="period">University of Huelva</p>
+                        <h4>Asistente Analítico</h4>
+                        <p class="period">2019 - 2020</p>
+                        <p>Recopilación y limpieza de datos, análisis exploratorio y documentación de procesos.</p>
                     </div>
                 </div>
             </div>
@@ -136,21 +161,12 @@ Technical Documentation</p>
         <!-- Contacto -->
         <section id="contact" class="section contact">
             <div class="container">
-                <h3>Contact</h3>
-                <p>Interested in collaborating? Send me a message</p>
+                <h3>Contacto</h3>
+                <p>¿Interesado en colaborar? Envíame un mensaje</p>
                 <div class="contact-info">
-                    <a href="mailto:ishmaelbovingdon@gmail.com" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                    <a href="tel:+34692871279" class="btn btn-secondary">
-                        <i class="fas fa-phone"></i> Phone
-                    </a>
-                    <a href="https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/i-bovingdon" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
+                    <a href="mailto:tu@email.com" class="btn btn-secondary">Email</a>
+                    <a href="https://linkedin.com" class="btn btn-secondary">LinkedIn</a>
+                    <a href="https://github.com" class="btn btn-secondary">GitHub</a>
                 </div>
             </div>
         </section>
@@ -158,16 +174,32 @@ Technical Documentation</p>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Ismael Bovingdon Castillejo. All rights reserved.</p>
+            <p>&copy; 2025 Analista de Datos. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- Python Runner Section (Pyodide) -->
+    <section id="python-runner" class="section runner-section">
+        <div class="container runner">
+            <div class="runner-left">
+                <h3>Ejecutar Python (en el navegador)</h3>
+                <p>Selecciona archivos Python locales (.py) y ejecútalos con Pyodide.</p>
+                <input id="file-input" type="file" accept=".py" multiple />
+                <div id="file-list" class="file-list"></div>
+                <div class="runner-controls">
+                    <button id="run-btn" class="btn btn-primary">Ejecutar archivo seleccionado</button>
+                    <button id="clear-btn" class="btn btn-secondary">Limpiar salida</button>
+                </div>
+                <p class="note">Nota: librerías con extensiones nativas (C) pueden no estar disponibles.</p>
+            </div>
+            <div class="runner-right">
+                <h3>Salida</h3>
+                <pre id="output" class="output" aria-live="polite"></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pyodide and app script -->
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+    <script src="WEB/app.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-

@@ -1,187 +1,192 @@
-/* =============================================================
-   PERSONAL DATA ENGINEER PORTFOLIO STYLES (cleaned)
-   ============================================================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Engineer building scalable data platforms, ETL/ELT pipelines, and cloud data solutions.">
+    <title>Ismael Bovingdon Castillejo | Data Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a class="logo" href="index.html">Data Engineer</a>
+                <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Open menu</span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primary-navigation" class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="lang-switch lang-spanish" href="index_es.html" target="_self">ES</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-:root {
-    --bg: #071828;
-    --surface: #0d1f3c;
-    --surface-2: #112a54;
-    --surface-soft: #142f65;
-    --text: #eef4ff;
-    --muted: #9cb7d5;
-    --accent: #52a0ff;
-    --accent-strong: #6d7cff;
-    --accent-soft: rgba(82, 160, 255, 0.18);
-    --border: rgba(82, 160, 255, 0.22);
-    --shadow: 0 28px 90px rgba(0, 0, 0, 0.28);
-    --radius: 28px;
-    --radius-sm: 16px;
-    --transition: 0.32s ease;
-}
+    <main>
+        <section class="hero">
+            <video class="bg-video hero-video" autoplay muted playsinline preload="auto" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3FuNjlzeW1qNTVpdWRteTZoZ25xejUwaXB4MjhqenVya2VucXRuOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lbcLMX9B6sTsGjUmS3/giphy.mp4"></video>
+            
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-content">
+                        <p class="eyebrow">DATA ENGINEER</p>
+                        <h1>I build scalable data platforms that turn raw information into reliable business insights.</h1>
+                        <p class="subtitle">I design and operate modern ETL/ELT pipelines, cloud data lakes, and observability workflows for teams that need fast, trusted analytics.</p>
+                        <div class="hero-ctas">
+                            <a href="#contact" class="btn btn-primary">Contact Me</a>
+                                <a href="assets/CV_Ismael_Bovingdon_Data_Engineer_2026.docx.pdf" download class="btn btn-primary" target="_blank" rel="noopener">Download CV</a>
+                                <a href="https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/" class="btn btn-primary" target="_blank" rel="noopener">LinkedIn</a>
+                                <a href="https://github.com/I-Bovingdon" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-shape">
+                            <span class="shape shape-1"></span>
+                            <span class="shape shape-2"></span>
+                            <span class="shape shape-3"></span>
+                            <img src="assets/profile02.png" alt="Professional profile photo" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at top, rgba(82,160,255,0.16), transparent 24%),
-                radial-gradient(circle at 85% 15%, rgba(109,93,255,0.12), transparent 30%),
-                var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    line-height: 1.7;
-}
+        <section id="about" class="section about">
+            <div class="container">
+                <h3>About</h3>
+                <p>I am a Data Engineer with proven experience designing and deploying scalable data pipelines, building cloud-native platforms, and delivering clean, production-ready datasets for analytics teams. I focus on reproducibility, observability, and automation to accelerate data-driven decision making.</p>
+                <div class="highlight-box">
+                    <p><strong>Core expertise:</strong> ETL/ELT architecture, Apache Airflow, Spark, Kafka, SQL, Python, AWS/GCP, and data governance.</p>
+                </div>
+            </div>
+        </section>
 
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-button { font: inherit; }
+        <section id="stack" class="section tech-stack">
+            <div class="container">
+                <h3>Technical Stack</h3>
+                <div class="stack-list">
+                    <span>AWS</span>
+                    <span>GCP</span>
+                    <span>Apache Spark</span>
+                    <span>Airflow</span>
+                    <span>Kafka</span>
+                    <span>PostgreSQL</span>
+                    <span>Docker</span>
+                    <span>Terraform</span>
+                </div>
+            </div>
+        </section>
 
-.container { width: min(1140px, calc(100% - 2rem)); margin: 0 auto; }
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h3>Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>Data Engineering</h4>
+                        <p>Pipeline design, data modeling, and workflow orchestration.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Cloud & DevOps</h4>
+                        <p>AWS, GCP, containers, and infrastructure as code.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Programming</h4>
+                        <p>Python, SQL, Spark, and automation scripting.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Observability</h4>
+                        <p>Metrics, logging, monitoring, and incident readiness.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Analytics</h4>
+                        <p>Data transformation, BI reporting, and model validation.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Collaboration</h4>
+                        <p>Documentation, stakeholder alignment, and agile delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Header / Nav */
-.header {
-    position: sticky; top: 0; z-index: 100;
-    backdrop-filter: blur(12px);
-    background: rgba(7,24,40,0.92);
-    border-bottom: 1px solid rgba(82,160,255,0.14);
-}
-.navbar { padding: 1rem 0; }
-.navbar .container { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
-.logo { font-size:1.35rem; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text); }
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h3>Featured Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h4>Scalable ETL Pipeline</h4>
+                        <p>Built an Airflow and Spark pipeline to process terabytes of daily operational data with automated quality checks.</p>
+                        <a href="#" class="btn btn-secondary">View case study</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Real-time Streaming</h4>
+                        <p>Designed a Kafka-based ingestion layer for near real-time analytics and automated alerting.</p>
+                        <a href="#" class="btn btn-secondary">View case study</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Cloud Data Lake</h4>
+                        <p>Delivered a cloud data lake architecture with cataloging, version control, and cost-optimized storage.</p>
+                        <a href="#" class="btn btn-secondary">View case study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.nav-links { display:flex; align-items:center; gap:1.2rem; list-style:none; }
-.nav-links a { position:relative; color:var(--muted); font-weight:500; transition: color var(--transition); }
-.nav-links a:hover, .nav-links a:focus-visible { color:var(--text); }
-.nav-links a::after { content:''; position:absolute; left:0; bottom:-6px; width:0; height:2px; background:var(--accent); transition: width var(--transition); }
-.nav-links a:hover::after, .nav-links a:focus-visible::after { width:100%; }
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h3>Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Senior Data Analyst</h4>
+                        <p class="period">2022 - Present</p>
+                        <p>Led digital transformation initiatives, managed data platforms, and delivered executive analytics dashboards.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Junior Data Analyst</h4>
+                        <p class="period">2020 - 2022</p>
+                        <p>Automated reporting, supported BI projects, and optimized operational data workflows.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Analytical Assistant</h4>
+                        <p class="period">2019 - 2020</p>
+                        <p>Collected and cleaned data, performed exploratory analysis, and documented analytics processes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.lang-switch {
-    display:inline-flex;
-    align-items:center;
-    gap:0.45rem;
-    padding:0.35rem 0.75rem;
-    border-radius:999px;
-    background: rgba(255,255,255,0.04);
-    border:1px solid rgba(82,160,255,0.12);
-    font-weight:700;
-}
-.lang-switch::before {
-    content: '';
-    font-size: 1rem;
-}
-.lang-switch.lang-spanish::before { content: '🇪🇸'; }
-.lang-switch.lang-english::before { content: '🇬🇧'; }
+        <section id="contact" class="section contact">
+            <video class="bg-video contact-video" autoplay muted playsinline preload="auto" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamc4YTRidnVkdWh6cnpud28za2toeDNoeWRrc3J2a3gwOWFhOW96YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7b8jdNUoFBdcoILjjv/giphy.mp4"></video>
+            <div class="container">
+                <h3>Contact</h3>
+                <p>Interested in collaborating? Send me a message.</p>
+                <div class="contact-info">
+                    <a href="mailto:hello@ismaelbovingdon.com" class="btn btn-primary">Email</a>
+                    <a href="https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/" class="btn btn-primary" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/I-Bovingdon" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+                    <a href="assets/CV_Ismael_Bovingdon_Data_Engineer_2026.docx.pdf" download class="btn btn-primary" target="_blank" rel="noopener">Download CV</a>
+                </div>
+                <div class="contact-details">
+                    <div><strong>Email:</strong> hello@ismaelbovingdon.com</div>
+                    <div><strong>Location:</strong> Remote / Madrid</div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-.nav-toggle { display:none; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--text); width:44px; height:44px; border-radius:12px; align-items:center; justify-content:center; cursor:pointer; }
-.nav-toggle .hamburger, .nav-toggle .hamburger::before, .nav-toggle .hamburger::after { content:''; display:block; width:20px; height:2px; background:var(--text); border-radius:999px; }
-.nav-toggle .hamburger::before { transform: translateY(-6px); }
-.nav-toggle .hamburger::after { transform: translateY(4px); }
-
-/* Hero */
-.hero { position:relative; padding:6rem 0 4rem; background: linear-gradient(180deg, rgba(7,20,45,0.72), rgba(9,27,55,0.6)); overflow:hidden; }
-.hero::before { content:''; position:absolute; inset:0; background: radial-gradient(circle at 10% 20%, rgba(82,160,255,0.08), transparent 12%), radial-gradient(circle at 80% 20%, rgba(109,93,255,0.08), transparent 18%); pointer-events:none; }
-
-.lang-es .hero { background-image: url('https://media.giphy.com/media/lbcLMX9B6sTsGjUmS3/giphy.gif'); background-repeat: no-repeat; background-size: cover; background-position: center; }
-.lang-es .section.contact { background-image: url('https://media.giphy.com/media/7b8jdNUoFBdcoILjjv/giphy.gif'); background-repeat: no-repeat; background-size: cover; background-position: center; background-blend-mode: screen; }
-
-.bg-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-1; opacity:0; transition: opacity 0.35s ease; }
-.bg-video.visible { opacity:1; }
-
-.hero-inner { position:relative; display:grid; grid-template-columns: minmax(0,1.2fr) minmax(280px,0.8fr); gap:3rem; align-items:center; z-index:2; }
-.hero-content { max-width:620px; }
-.eyebrow { display:inline-block; margin-bottom:1rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--accent); font-size:0.78rem; font-weight:700; }
-.hero h1 { font-size:clamp(2.75rem, 4vw, 4.25rem); line-height:1.02; margin-bottom:1.5rem; }
-.subtitle { max-width:680px; color:var(--muted); font-size:1.05rem; margin-bottom:2rem; }
-
-.hero-ctas { display:flex; flex-wrap:wrap; gap:1rem; }
-
-.btn { display:inline-flex; align-items:center; justify-content:center; padding:0.95rem 1.7rem; border-radius:999px; font-weight:700; letter-spacing:0.01em; transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition); border:1px solid transparent; }
-.btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-strong)); color: var(--bg); box-shadow: 0 18px 35px rgba(100,181,246,0.18); }
-.btn-primary:hover, .btn-primary:focus-visible { transform: translateY(-2px); box-shadow: 0 24px 40px rgba(100,181,246,0.25); }
-.btn-secondary { background: rgba(255,255,255,0.06); color:var(--text); border-color: rgba(255,255,255,0.08); }
-.btn-secondary:hover, .btn-secondary:focus-visible { transform: translateY(-2px); background: rgba(255,255,255,0.12); }
-
-/* Hero image / circular frame */
-.hero-image { display:grid; place-items:center; }
-.hero-shape { position:relative; width: min(100%, 380px); aspect-ratio:1/1; display:grid; place-items:center; border-radius:50%; background: rgba(10,24,50,0.55); overflow:hidden; border: 10px solid rgba(82,160,255,0.55); box-shadow: 0 32px 88px rgba(0,0,0,0.28); }
-.hero-shape .shape { position:absolute; border-radius:50%; filter:blur(12px); opacity:0.7; animation:float 10s ease-in-out infinite; }
-.shape-1 { width:130px; height:130px; background: rgba(82,160,255,0.18); top:10%; left:18%; }
-.shape-2 { width:85px; height:85px; background: rgba(109,93,255,0.14); bottom:14%; right:15%; animation-duration:8s; }
-.shape-3 { width:55px; height:55px; background: rgba(255,255,255,0.08); top:40%; right:25%; animation-duration:7s; }
-
-.hero-shape img {
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:125%;
-    height:auto;
-    transform: translate(-50%, -75%);
-    object-fit: cover;
-    border-radius:50%;
-    box-shadow:0 18px 36px rgba(0,0,0,0.26);
-    z-index:1;
-}
-@keyframes float { 0%,100%{transform:translateY(0) translateX(0);} 50%{transform:translateY(12px) translateX(6px);} }
-
-/* Contact section with background video */
-.section.contact { position:relative; background: linear-gradient(180deg, rgba(7,20,45,0.86), rgba(7,20,45,0.72)); color:#e6efff; overflow:hidden; }
-.section.contact .bg-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-1; }
-.section.contact .contact-details, .section.contact p, .section.contact .contact-info a { color: rgba(255,255,255,0.92); }
-
-.section {
-    padding:5rem 0;
-    max-height: 260px;
-    overflow: hidden;
-    transition: max-height 0.45s ease, padding 0.35s ease, box-shadow 0.35s ease;
-    cursor: pointer;
-    position: relative;
-}
-.section:hover,
-.section.expanded,
-.section:focus-within {
-    max-height: 1600px;
-}
-
-.section::after {
-    content: 'Hover or click to expand';
-    position: absolute;
-    right: 1.5rem;
-    bottom: 1.2rem;
-    font-size: 0.82rem;
-    color: rgba(255,255,255,0.55);
-    pointer-events: none;
-}
-
-.section.expanded::after,
-.section:hover::after,
-.section:focus-within::after {
-    content: '';
-}
-
-.section h3 { font-size:clamp(2rem,3vw,2.6rem); margin-bottom:1.4rem; color:var(--text); position:relative; }
-.section h3::after { content:''; position:absolute; left:0; bottom:-8px; width:60px; height:4px; background:var(--accent); border-radius:999px; }
-
-.highlight-box { margin-top:1.8rem; padding:1.4rem 1.6rem; border:1px solid rgba(255,255,255,0.04); background: rgba(255,255,255,0.02); border-radius:var(--radius-sm); color:var(--text); }
-
-.projects-grid, .skills-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:1.5rem; }
-.project-card, .skill-card { background: rgba(255,255,255,0.02); border:1px solid rgba(82,160,255,0.06); border-radius:var(--radius); padding:1.75rem; box-shadow:0 18px 40px rgba(0,0,0,0.22); transition:transform var(--transition), border-color var(--transition), box-shadow var(--transition), background var(--transition); }
-.project-card:hover, .project-card:focus-within, .skill-card:hover, .skill-card:focus-within { transform: translateY(-6px); border-color: rgba(82,160,255,0.12); box-shadow: 0 26px 55px rgba(0,0,0,0.26); }
-
-.timeline { display:grid; gap:1.5rem; }
-.timeline-item { background: rgba(255,255,255,0.02); border:1px solid rgba(82,160,255,0.06); border-radius:var(--radius); padding:1.4rem 1.6rem; }
-.timeline-item .period { color:var(--accent); font-weight:700; display:inline-block; margin-bottom:0.9rem; }
-
-.contact-info { display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem; }
-.contact-details { display:grid; gap:0.85rem; color:var(--muted); font-size:0.97rem; }
-
-.footer { padding:2rem 0 3rem; background: rgba(255,255,255,0.02); border-top:1px solid rgba(255,255,255,0.02); text-align:center; color:var(--muted); }
-.footer p { margin:0; }
-
-.sr-only { position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-
-/* Responsive tweaks */
-@media (max-width: 880px) {
-    .hero-inner { grid-template-columns: 1fr; gap:2rem; }
-    .hero-shape { width: 260px; }
-    .nav-links { display:none; }
-    .nav-toggle { display:flex; }
-}
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ismael Bovingdon Castillejo. Built for modern data teams.</p>
+        </div>
+    </footer>
+    <script src="WEB/app.js"></script>
+</body>
+</html>

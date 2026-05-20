@@ -1,0 +1,46 @@
+%PDF-1.41 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 359 >>
+stream
+BT
+/F1 12 Tf
+72 720 Td
+(Ismael Bovingdon Castillejo) Tj
+0 -18 Td
+(Data Engineer) Tj
+0 -18 Td
+() Tj
+0 -18 Td
+(Profile: Experienced data engineer building ETL/ELT pipelines, cloud data lakes, and analytics platforms.) Tj
+0 -18 Td
+(Skills: Python, SQL, Spark, Airflow, Kafka, AWS, GCP, Terraform.) Tj
+0 -18 Td
+(Contact: hello@ismaelbovingdon.com) Tj
+0 -18 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000000 00000 n 
+0000000049 00000 n 
+0000000106 00000 n 
+0000000232 00000 n 
+0000000302 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+711
+%%EOF

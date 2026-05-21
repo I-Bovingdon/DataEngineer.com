@@ -231,13 +231,81 @@ h1 {
   content: '\1F30D';
 }
 
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper que porta el marco con relieve */
+.avatar-wrapper {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  /* Anillo exterior con gradiente que simula la luz incidente */
+  background: conic-gradient(
+    from 120deg,
+    rgba(255, 139, 51, 0.85) 0deg,
+    rgba(255, 200, 120, 0.95) 60deg,
+    rgba(180, 100, 20, 0.6) 140deg,
+    rgba(80, 50, 10, 0.4) 200deg,
+    rgba(255, 139, 51, 0.7) 270deg,
+    rgba(255, 200, 120, 0.9) 320deg,
+    rgba(255, 139, 51, 0.85) 360deg
+  );
+  padding: 5px;
+
+  /* Sombras en capas: elevación + oclusión ambiental */
+  box-shadow:
+    0 2px 4px rgba(255, 180, 80, 0.5),          /* luz superior — highlight */
+    0 -2px 4px rgba(80, 40, 5, 0.6),            /* sombra inferior del anillo */
+    0 20px 50px rgba(0, 0, 0, 0.55),            /* sombra de elevación */
+    0 40px 90px rgba(0, 0, 0, 0.3),             /* sombra difusa larga */
+    inset 0 2px 4px rgba(255, 220, 140, 0.4),   /* brillo interior superior */
+    inset 0 -2px 4px rgba(40, 20, 0, 0.5);      /* profundidad interior inferior */
+}
+
+/* Segundo anillo interior oscuro — crea la sensación de surco/bisel */
+.avatar-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(20, 10, 0, 0.7), rgba(60, 30, 5, 0.3));
+  box-shadow:
+    inset 0 3px 6px rgba(0, 0, 0, 0.7),
+    inset 0 -2px 4px rgba(255, 160, 60, 0.15);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Destello especular en la parte superior del anillo */
+.avatar-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(255, 235, 180, 0.55), transparent);
+  filter: blur(4px);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* El contenedor real de la foto */
 .avatar-frame {
-  width: 320px;
-  height: 320px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  flex-shrink: 0;
-  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 2;
 }
 
 .avatar-frame img {

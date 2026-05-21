@@ -20,8 +20,8 @@ html {
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top, rgba(255, 139, 51, 0.1), transparent 30%),
-    linear-gradient(180deg, #03101f 0%, #071725 50%, #041127 100%);
+  background: radial-gradient(circle at top, rgba(68, 100, 145, 0.16), transparent 28%),
+    linear-gradient(180deg, #081a2d 0%, #0f2a4a 50%, #0b203b 100%);
   color: var(--text);
 }
 
@@ -39,7 +39,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(4, 17, 39, 0.96);
+  background-image: linear-gradient(rgba(8, 22, 40, 0.92), rgba(8, 22, 40, 0.92)), url("assets/header.png");
+  background-size: cover;
+  background-position: center;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 139, 51, 0.12);
 }
@@ -116,12 +118,14 @@ h1 {
 }
 
 .flag-icon {
-  width: 20px;
-  height: 14px;
+  width: 24px;
+  height: 16px;
   display: inline-block;
-  background: linear-gradient(135deg, #00247d 0 32%, #cf142b 0 68%, #fff 0 100%);
-  border-radius: 2px;
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+  background: #012169;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Crect width='60' height='30' fill='%23012169'/%3E%3Cpath d='M0 0 L60 30 M60 0 L0 30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0 0 L60 30 M60 0 L0 30' stroke='%23cf142b' stroke-width='4'/%3E%3Cpath d='M30 0 L30 30 M0 15 L60 15' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30 0 L30 30 M0 15 L60 15' stroke='%23cf142b' stroke-width='6'/%3E%3C/svg%3E");
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .hero {
@@ -252,9 +256,9 @@ h1 {
 .section-heading span {
   display: inline-block;
   color: var(--accent);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .section-heading h2 {
@@ -269,7 +273,8 @@ h1 {
 }
 
 .about-copy p {
-  line-height: 1.85;
+  font-size: 1.05rem;
+  line-height: 2;
   color: var(--muted);
   margin-top: 1rem;
 }
@@ -290,7 +295,7 @@ h1 {
   width: 100%;
   text-align: left;
   padding: 1.4rem 1.5rem;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
   color: var(--text);
   border: none;
@@ -317,6 +322,13 @@ h1 {
   overflow: hidden;
   transition: max-height 0.35s ease;
   padding: 0 1.5rem;
+}
+
+.accordion-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 1rem 0 0;
 }
 
 .accordion-content ul {
@@ -402,12 +414,15 @@ h1 {
 
 .site-footer {
   padding: 1.5rem 0 2rem;
+  background-image: linear-gradient(rgba(8, 22, 40, 0.96), rgba(8, 22, 40, 0.96)), url("assets/footer.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .footer-inner {
   border-top: 1px solid rgba(255, 139, 51, 0.1);
   padding-top: 1.5rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
 

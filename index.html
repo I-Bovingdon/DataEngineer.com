@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ismael Bovingdon · Junior Data Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Feather Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>IBC<span class="logo-bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#stack">Stack & Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="#" class="btn-lang" title="Switch to English" onclick="alert('English version coming soon!')">
+          <img src="https://flagcdn.com/gb.svg" alt="English" class="flag-icon" />
+          <span>EN</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <ul class="nav-mobile" id="navMobile">
+      <li><a href="#sobre-mi" onclick="closeMobileMenu()">Sobre mí</a></li>
+      <li><a href="#stack" onclick="closeMobileMenu()">Stack & Habilidades</a></li>
+      <li><a href="#proyectos" onclick="closeMobileMenu()">Proyectos</a></li>
+      <li><a href="#contacto" onclick="closeMobileMenu()">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO / HEADER ========== -->
+  <header id="hero">
+    <div class="hero-bg-image">
+      <img src="assets/Header.png" alt="header background" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- LEFT: text + buttons -->
+      <div class="hero-text">
+        <p class="hero-eyebrow">DATA ENGINEER · ANALYTICS · MACHINE LEARNING</p>
+        <h1 class="hero-title">
+          Turning <span class="accent">Data</span> into<br/>
+          Scalable <span class="accent-orange">Solutions</span>
+        </h1>
+        <div class="hero-divider"></div>
+        <p class="hero-subtitle">
+          Ismael Bovingdon Castillejo<br/>
+          <span class="hero-role">Junior Data Engineer · Madrid, España</span>
+        </p>
+        <div class="hero-buttons">
+          <a href="#contacto" class="btn btn-primary">
+            <i data-feather="phone"></i>
+            <span>Contacto</span>
+          </a>
+          <a href="assets/CV_Ismael_Bovingdon_2026.pdf" download class="btn btn-secondary">
+            <i data-feather="file-text"></i>
+            <span>Descargar CV</span>
+          </a>
+        </div>
+        <div class="hero-tech-icons">
+          <span class="tech-badge">SQL</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">Azure</span>
+          <span class="tech-badge">Data Factory</span>
+          <span class="tech-badge">Power BI</span>
+          <span class="tech-badge">Machine Learning</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: profile photo -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <img src="assets/ProfilePicture.png" alt="Ismael Bovingdon" class="hero-photo" />
+        </div>
+        <div class="hero-photo-glow"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== SOBRE MÍ ========== -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">Sobre <span class="accent-orange">Mí</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <p>
+          Ingeniero industrial con experiencia en entornos tecnológicos, financieros e industriales,
+          actualmente orientando mi carrera hacia Data Engineering y soluciones Data &amp; Cloud.
+        </p>
+        <p>
+          Experiencia previa como Backend Developer en BBVA Technology trabajando con bases de datos
+          SQL y sistemas financieros críticos de gran volumen. Actualmente desarrollando proyectos de
+          Business Intelligence, ETL y soluciones de reporting orientadas a negocio en Babel.
+        </p>
+        <p>
+          Compagino mi experiencia profesional con el desarrollo de proyectos personales enfocados en
+          Data, Cloud e IA, fortaleciendo experiencia práctica en escenarios reales y arquitecturas
+          orientadas a datos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STACK & HABILIDADES ========== -->
+  <section id="stack" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Stack Técnico <span class="accent-orange">&amp; Habilidades</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="accordion-group">
+
+        <!-- Panel 1: Stack Técnico -->
+        <div class="accordion" id="acc-stack">
+          <button class="accordion-header" onclick="toggleAccordion('acc-stack')">
+            <div class="acc-left">
+              <i data-feather="layers" class="acc-icon"></i>
+              <span>Stack Técnico</span>
+            </div>
+            <i data-feather="chevron-down" class="acc-arrow"></i>
+          </button>
+          <div class="accordion-body">
+            <div class="stack-grid">
+              <div class="stack-category">
+                <h4 class="stack-cat-title">Programación & Datos</h4>
+                <div class="stack-items">
+                  <div class="stack-item"><span class="stack-dot"></span>Python</div>
+                  <div class="stack-item"><span class="stack-dot"></span>SQL</div>
+                  <div class="stack-item"><span class="stack-dot"></span>DB2 SQL</div>
+                  <div class="stack-item"><span class="stack-dot"></span>JavaScript</div>
+                  <div class="stack-item"><span class="stack-dot"></span>COBOL</div>
+                </div>
+              </div>
+              <div class="stack-category">
+                <h4 class="stack-cat-title">BI & Analytics</h4>
+                <div class="stack-items">
+                  <div class="stack-item"><span class="stack-dot"></span>Power BI</div>
+                  <div class="stack-item"><span class="stack-dot"></span>ETL / ELT</div>
+                  <div class="stack-item"><span class="stack-dot"></span>Data Analysis</div>
+                  <div class="stack-item"><span class="stack-dot"></span>Reporting</div>
+                  <div class="stack-item"><span class="stack-dot"></span>Data Visualization</div>
+                </div>
+              </div>
+              <div class="stack-category">
+                <h4 class="stack-cat-title">Cloud & Data Engineering</h4>
+                <div class="stack-items">
+                  <div class="stack-item"><span class="stack-dot"></span>Azure Data Factory</div>
+                  <div class="stack-item"><span class="stack-dot"></span>Data Processing</div>
+                  <div class="stack-item"><span class="stack-dot"></span>Data Transformation</div>
+                  <div class="stack-item"><span class="stack-dot"></span>Relational Databases</div>
+                  <div class="stack-item"><span class="stack-dot"></span>Machine Learning</div>
+                </div>
+              </div>
+              <div class="stack-category">
+                <h4 class="stack-cat-title">Herramientas</h4>
+                <div class="stack-items">
+                  <div class="stack-item"><span class="stack-dot"></span>Git / GitHub</div>
+                  <div class="stack-item"><span class="stack-dot"></span>SSMS</div>
+                  <div class="stack-item"><span class="stack-dot"></span>Control-M</div>
+                  <div class="stack-item"><span class="stack-dot"></span>VS Code</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Habilidades -->
+        <div class="accordion" id="acc-skills">
+          <button class="accordion-header" onclick="toggleAccordion('acc-skills')">
+            <div class="acc-left">
+              <i data-feather="award" class="acc-icon"></i>
+              <span>Habilidades Transversales</span>
+            </div>
+            <i data-feather="chevron-down" class="acc-arrow"></i>
+          </button>
+          <div class="accordion-body">
+            <div class="skills-grid">
+              <div class="skill-pill"><i data-feather="users"></i> Trabajo en equipo multidisciplinar</div>
+              <div class="skill-pill"><i data-feather="git-pull-request"></i> Gestión de incidencias</div>
+              <div class="skill-pill"><i data-feather="bar-chart-2"></i> Análisis y toma de decisiones</div>
+              <div class="skill-pill"><i data-feather="refresh-cw"></i> Adaptabilidad tecnológica</div>
+              <div class="skill-pill"><i data-feather="briefcase"></i> Gestión de proyectos</div>
+              <div class="skill-pill"><i data-feather="message-square"></i> Comunicación técnica</div>
+              <div class="skill-pill"><i data-feather="search"></i> Resolución de problemas</div>
+              <div class="skill-pill"><i data-feather="trending-up"></i> Mejora continua</div>
+              <div class="skill-pill"><i data-feather="globe"></i> Inglés C1 (Professional)</div>
+              <div class="skill-pill"><i data-feather="flag"></i> Español nativo</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROYECTOS ========== -->
+  <section id="proyectos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title"><span class="accent-orange">Proyectos</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="accordion-group">
+
+        <!-- Proyecto 1 -->
+        <div class="accordion project-accordion" id="acc-proj1">
+          <button class="accordion-header" onclick="toggleAccordion('acc-proj1')">
+            <div class="acc-left">
+              <i data-feather="database" class="acc-icon"></i>
+              <span>Pipeline ETL — Integración y Análisis de Datos Financieros</span>
+            </div>
+            <i data-feather="chevron-down" class="acc-arrow"></i>
+          </button>
+          <div class="accordion-body">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Azure Data Factory</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Power BI</span>
+              </div>
+              <p>
+                Pipeline ETL de extremo a extremo para la extracción, transformación y carga de datos
+                financieros de gran volumen. Incluye validación de calidad del dato, transformaciones
+                complejas y reporting automatizado en Power BI orientado a la toma de decisiones de negocio.
+              </p>
+              <div class="project-images">
+                <div class="project-img-placeholder">
+                  <i data-feather="image"></i>
+                  <span>Imagen del proyecto — próximamente</span>
+                </div>
+                <div class="project-img-placeholder">
+                  <i data-feather="image"></i>
+                  <span>Imagen del proyecto — próximamente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="accordion project-accordion" id="acc-proj2">
+          <button class="accordion-header" onclick="toggleAccordion('acc-proj2')">
+            <div class="acc-left">
+              <i data-feather="cpu" class="acc-icon"></i>
+              <span>Dashboard BI — Reporting Operativo en Entorno Cloud</span>
+            </div>
+            <i data-feather="chevron-down" class="acc-arrow"></i>
+          </button>
+          <div class="accordion-body">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">Azure</span>
+                <span class="tag">SSMS</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+              <p>
+                Desarrollo de dashboard corporativo para la visualización de KPIs operativos y métricas de
+                negocio. Integración con fuentes de datos heterogéneas en entorno Azure, con actualización
+                automática y acceso multi-departamento.
+              </p>
+              <div class="project-images">
+                <div class="project-img-placeholder">
+                  <i data-feather="image"></i>
+                  <span>Imagen del proyecto — próximamente</span>
+                </div>
+                <div class="project-img-placeholder">
+                  <i data-feather="image"></i>
+                  <span>Imagen del proyecto — próximamente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04</span>
+        <h2 class="section-title"><span class="accent-orange">Contacto</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="contact-intro">¿Tienes un proyecto en mente o una oportunidad profesional? Estoy disponible para colaborar.</p>
+
+      <div class="contact-grid">
+        <a href="tel:+34692871279" class="contact-card">
+          <div class="contact-icon-wrap"><i data-feather="phone"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Teléfono</span>
+            <span class="contact-value">+34 692 871 279</span>
+          </div>
+        </a>
+        <a href="mailto:ishmaelbovingdon@gmail.com" class="contact-card">
+          <div class="contact-icon-wrap"><i data-feather="mail"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">ishmaelbovingdon@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon-wrap"><i data-feather="linkedin"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">ismael-bovingdon-castillejo</span>
+          </div>
+        </a>
+        <a href="https://github.com/I-Bovingdon" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon-wrap"><i data-feather="github"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">I-Bovingdon</span>
+          </div>
+        </a>
+        <div class="contact-card no-link">
+          <div class="contact-icon-wrap"><i data-feather="map-pin"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Localización</span>
+            <span class="contact-value">Remoto · Madrid, España</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-bg-image">
+      <img src="assets/Botton.png" alt="footer background" />
+      <div class="footer-overlay"></div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>IBC<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">Ismael Bovingdon Castillejo · Junior Data Engineer · Madrid, España</p>
+      <p class="footer-copy small">Turning Data into Scalable Solutions</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/" target="_blank"><i data-feather="linkedin"></i></a>
+        <a href="https://github.com/I-Bovingdon" target="_blank"><i data-feather="github"></i></a>
+        <a href="mailto:ishmaelbovingdon@gmail.com"><i data-feather="mail"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Init feather icons
+    feather.replace();
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Mobile menu toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navMobile').classList.toggle('open');
+    });
+    function closeMobileMenu() {
+      document.getElementById('navMobile').classList.remove('open');
+    }
+
+    // Accordion logic — both panels open/close together
+    function toggleAccordion(id) {
+      const el = document.getElementById(id);
+      const isOpen = el.classList.contains('open');
+
+      // Check if it's in the stack group (toggle both together)
+      const stackIds = ['acc-stack', 'acc-skills'];
+      if (stackIds.includes(id)) {
+        const anyOpen = stackIds.some(sid => document.getElementById(sid).classList.contains('open'));
+        stackIds.forEach(sid => {
+          const acc = document.getElementById(sid);
+          if (anyOpen) {
+            acc.classList.remove('open');
+          } else {
+            acc.classList.add('open');
+          }
+        });
+      } else {
+        el.classList.toggle('open');
+      }
+    }
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section, .accordion, .contact-card').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

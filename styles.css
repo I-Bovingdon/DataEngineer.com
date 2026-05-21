@@ -771,6 +771,23 @@ h1 {
   color: #ffb070;
 }
 
+/* Stack tags — variante naranja (habilidades) */
+.pce-stack--orange span {
+  background: rgba(255, 139, 51, 0.1);
+  border: 1px solid rgba(255, 139, 51, 0.22);
+  color: #ffb070;
+}
+
+.project-card-enterprise:hover .pce-stack--orange span {
+  background: rgba(255, 139, 51, 0.2);
+  border-color: rgba(255, 139, 51, 0.38);
+}
+
+/* Impact list — variante naranja (habilidades) */
+.pce-impact--orange li::before {
+  color: var(--accent);
+}
+
 @media (max-width: 860px) {
   .project-cards-grid {
     grid-template-columns: 1fr;

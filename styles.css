@@ -681,6 +681,7 @@ h1 {
   line-height: 1.75;
   color: var(--muted);
   margin: 0;
+  text-align: justify;
 }
 
 /* Stack tags */
@@ -722,6 +723,7 @@ h1 {
   padding-left: 1.4rem;
   position: relative;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .pce-impact li::before {

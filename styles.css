@@ -150,6 +150,7 @@ h1 {
 .hero-copy h2 {
   font-size: clamp(1.8rem, 2.8vw, 2.7rem);
   line-height: 1.05;
+  text-align: justify;
 }
 
 .hero-text {
@@ -157,6 +158,7 @@ h1 {
   margin: 1.5rem 0 2rem;
   line-height: 1.8;
   color: var(--muted);
+  text-align: justify;
 }
 
 .hero-actions {
@@ -390,6 +392,7 @@ h1 {
   line-height: 2;
   color: var(--muted);
   margin-top: 1rem;
+  text-align: justify;
 }
 
 .accordion-group {
@@ -557,6 +560,7 @@ h1 {
   line-height: 1.8;
   margin: 0 0 2.5rem;
   max-width: 680px;
+  text-align: justify;
 }
 
 /* ── Project cards grid ── */

@@ -390,7 +390,6 @@ h1 {
   line-height: 2;
   color: var(--muted);
   margin-top: 1rem;
-  text-align: justify;
 }
 
 .accordion-group {
@@ -557,7 +556,7 @@ h1 {
   font-size: 1.05rem;
   line-height: 1.8;
   margin: 0 0 2.5rem;
-  text-align: justify;
+  max-width: 680px;
 }
 
 /* ── Project cards grid ── */
@@ -682,7 +681,6 @@ h1 {
   line-height: 1.75;
   color: var(--muted);
   margin: 0;
-  text-align: justify;
 }
 
 /* Stack tags */
@@ -724,7 +722,6 @@ h1 {
   padding-left: 1.4rem;
   position: relative;
   line-height: 1.5;
-  text-align: justify;
 }
 
 .pce-impact li::before {
@@ -822,7 +819,7 @@ h1 {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 640px) {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;

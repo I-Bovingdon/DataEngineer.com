@@ -150,7 +150,6 @@ h1 {
 .hero-copy h2 {
   font-size: clamp(1.8rem, 2.8vw, 2.7rem);
   line-height: 1.05;
-  text-align: justify;
 }
 
 .hero-text {
@@ -559,7 +558,6 @@ h1 {
   font-size: 1.05rem;
   line-height: 1.8;
   margin: 0 0 2.5rem;
-  max-width: 680px;
   text-align: justify;
 }
 

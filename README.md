@@ -4,6 +4,10 @@ Personal portfolio site for a Junior Data Engineer, built as a static site ready
 
 **Live site:** `https://i-bovingdon.github.io` *(once deployed)*
 
+https://i-bovingdon.github.io/DataEngineer.com/index-en.html
+
+[![image](https://github.com/user-attachments/assets/2420c432-315d-4e9c-a565-49e58f2fde12)](https://i-bovingdon.github.io/DataEngineer.com/index-en.html)
+
 ---
 
 ## Structure

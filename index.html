@@ -5,6 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ismael Bovingdon Castillejo | Data Engineer</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Modal deployment */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(4, 17, 39, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: linear-gradient(145deg, #0c1a36, #112846);
+      border: 1px solid rgba(255, 139, 51, 0.28);
+      border-radius: 24px;
+      padding: 2rem;
+      max-width: 860px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.4rem;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s;
+    }
+    .modal-close:hover { color: var(--accent); }
+    .modal-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      padding-right: 2rem;
+    }
+    .modal-subtitle {
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-top: -0.8rem;
+    }
+    .modal-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .modal-images img {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .modal-caption {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.3rem;
+    }
+    @media (max-width: 600px) {
+      .modal-images { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -81,7 +156,6 @@
           <span>Stack técnico & Habilidades</span>
           <h2>Herramientas, plataformas y capacidades clave</h2>
         </div>
-        <!-- <p class="projects-narrative">Tecnologías y capacidades desarrolladas en entornos reales de producción, orientadas a la ingeniería de datos, la nube y el análisis de negocio.</p> -->
 
         <div class="project-cards-grid">
 
@@ -101,15 +175,20 @@
             </div>
             <p class="pce-description">Herramientas y plataformas utilizadas en producción para construir pipelines de datos, modelos analíticos y soluciones cloud robustas.</p>
             <div class="pce-stack">
-              <span> SQL Server </span>
-              <span> Azure DataFactory </span>
-              <span> Snowflake </span>
-              <span> PowerBI </span>
-              <span> Python / PyTorh </span>
-              <span> Apache Spark </span>
-              <span> ETL & Pipelines </span>
-              <span> LangChain / LangGraph </span>
-              <span> TensorFlow </span>
+              <span>SQL Server</span>
+              <span>Azure Data Factory</span>
+              <span>Snowflake</span>
+              <span>Power BI</span>
+              <span>Python</span>
+              <span>Apache Spark</span>
+              <span>ETL & Pipelines</span>
+              <span>LangChain / LangGraph</span>
+              <span>scikit-learn</span>
+              <span>systemd · Linux</span>
+              <span>rclone · Google Drive</span>
+              <span>GTFS-Realtime</span>
+              <span>Parquet · Pandas</span>
+              <span>Gradio</span>
             </div>
             <ul class="pce-impact">
               <li>Bases de datos relacionales y sistemas SQL de alto volumen</li>
@@ -144,6 +223,8 @@
               <span>OpenAI API</span>
               <span>Anthropic API</span>
               <span>Agentes de IA</span>
+              <span>Infraestructura 24/7</span>
+              <span>MLOps básico</span>
             </div>
             <ul class="pce-impact pce-impact--orange">
               <li>Diseño de arquitecturas orientadas a datos y negocio</li>
@@ -167,7 +248,7 @@
 
         <div class="project-cards-grid">
 
-          <!-- Card 1 -->
+          <!-- Card 1 — TFM Cercanías RENFE -->
           <article class="project-card-enterprise">
             <div class="pce-glow pce-glow--blue"></div>
             <div class="pce-header">
@@ -177,64 +258,73 @@
                 </svg>
               </div>
               <div class="pce-meta">
-                <span class="pce-category">ETL · Reporting Financiero</span>
-                <h3 class="pce-title">Pipeline de datos para reporting financiero</h3>
+                <span class="pce-category">Data Engineering · Tiempo Real · ML</span>
+                <h3 class="pce-title">Predicción de retrasos en Cercanías Madrid (RENFE)</h3>
               </div>
             </div>
-            <p class="pce-description">Automatización de procesos financieros y reporting empresarial mediante un flujo ETL robusto sobre sistemas críticos de gran volumen.</p>
+            <p class="pce-description">Pipeline 24/7 desplegado en VPS que captura feeds GTFS-Realtime de RENFE y datos AEMET para construir desde cero el histórico de retrasos — dato que RENFE no publica — con el que entrenar un modelo predictivo.</p>
             <div class="pce-stack">
-              <span>Azure Data Factory</span>
-              <span>SQL Server</span>
-              <span>T-SQL</span>
-              <span>Power BI</span>
-              <span>ETL</span>
+              <span>Python</span>
+              <span>GTFS-Realtime</span>
+              <span>Parquet</span>
+              <span>Pandas</span>
+              <span>systemd</span>
+              <span>Linux VPS</span>
+              <span>rclone</span>
+              <span>AEMET API</span>
+              <span>XGBoost / LightGBM</span>
+              <span>LSTM / GRU</span>
             </div>
             <ul class="pce-impact">
-              <li>Procesamiento ETL automatizado end-to-end</li>
-              <li>+1M de registros procesados por ejecución</li>
-              <li>Reducción de tiempos de carga en reporting</li>
-              <li>Garantía de calidad y trazabilidad de datos</li>
+              <li>Pipeline de ingesta multifuente operativo 24/7 en producción</li>
+              <li>+320.000 registros capturados en el primer día</li>
+              <li>Arquitectura raw → Parquet → backup automático a Drive</li>
+              <li>Resiliencia verificada: reinicio automático con systemd</li>
             </ul>
             <div class="pce-actions">
-              <a class="pce-btn pce-btn--primary" href="#">Ver arquitectura</a>
-              <a class="pce-btn" href="https://github.com/I-Bovingdon" target="_blank" rel="noopener">GitHub</a>
-              <a class="pce-btn" href="#">Dashboard</a>
+              <a class="pce-btn pce-btn--primary" href="https://github.com/I-Bovingdon/tfm-cercanias-colectores/blob/main/README.md" target="_blank" rel="noopener">Ver arquitectura</a>
+              <a class="pce-btn" href="https://github.com/I-Bovingdon/tfm-cercanias-colectores" target="_blank" rel="noopener">GitHub</a>
+              <a class="pce-btn" href="https://github.com/I-Bovingdon/tfm-cercanias-colectores/blob/main/Estructura_Datos_TFM_Cercanias.pdf" target="_blank" rel="noopener">Estructura de datos</a>
             </div>
           </article>
 
-          <!-- Card 2 -->
+          <!-- Card 2 — Pump It Up -->
           <article class="project-card-enterprise">
             <div class="pce-glow pce-glow--orange"></div>
             <div class="pce-header">
               <div class="pce-icon pce-icon--orange" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
-                  <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+                  <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 8v4l3 3"/>
                 </svg>
               </div>
               <div class="pce-meta">
-                <span class="pce-category pce-category--orange">BI · Analítica de negocio</span>
-                <h3 class="pce-title">Dashboard BI para análisis de demanda</h3>
+                <span class="pce-category pce-category--orange">ML · IA Generativa · Interfaces</span>
+                <h3 class="pce-title">Pump It Up — Predicción de bombas de agua (Tanzania)</h3>
               </div>
             </div>
-            <p class="pce-description">Tablero de control ejecutivo que centraliza métricas clave y KPIs, habilitando decisiones basadas en datos con visibilidad en tiempo real.</p>
+            <p class="pce-description">Pipeline ML completo sobre 59.000 bombas de agua en Tanzania: de la clasificación con ensemble ponderado (0.823 en leaderboard) a dos interfaces de uso real — predictor individual con Gradio y asistente conversacional con la API de Claude.</p>
             <div class="pce-stack">
-              <span>Power BI</span>
               <span>Python</span>
+              <span>scikit-learn</span>
+              <span>XGBoost</span>
+              <span>LightGBM</span>
+              <span>LangGraph</span>
+              <span>Anthropic API</span>
+              <span>Gradio</span>
               <span>Pandas</span>
-              <span>SQL</span>
-              <span>Azure</span>
+              <span>SHAP</span>
+              <span>Matplotlib</span>
             </div>
             <ul class="pce-impact">
-              <li>Dashboards para reporting ejecutivo</li>
-              <li>Arquitectura cloud escalable</li>
-              <li>KPIs automatizados y actualizados</li>
-              <li>Análisis de tendencias y demanda</li>
+              <li>0.8230 de accuracy en el leaderboard de DrivenData</li>
+              <li>Detección x2 de bombas reparables frente a modelos base</li>
+              <li>Predictor individual en vivo con probabilidad por clase</li>
+              <li>Asistente IA conversacional sobre los resultados del análisis</li>
             </ul>
             <div class="pce-actions">
-              <a class="pce-btn pce-btn--primary" href="#">Ver arquitectura</a>
-              <a class="pce-btn" href="https://github.com/I-Bovingdon" target="_blank" rel="noopener">GitHub</a>
-              <a class="pce-btn" href="#">Dashboard</a>
+              <a class="pce-btn pce-btn--primary" href="https://github.com/I-Bovingdon/MachineLearning_Pipeline_WaterInfrastructure_Agentic_EDA/blob/main/README.md" target="_blank" rel="noopener">Ver arquitectura</a>
+              <a class="pce-btn" href="https://github.com/I-Bovingdon/MachineLearning_Pipeline_WaterInfrastructure_Agentic_EDA" target="_blank" rel="noopener">GitHub</a>
+              <button class="pce-btn" onclick="document.getElementById('modal-pumpitup').classList.add('open')">Deployment</button>
             </div>
           </article>
 
@@ -263,14 +353,14 @@
               <p>ishmaelbovingdon@gmail.com</p>
             </div>
           </a>
-          <a class="contact-card" href="https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/" target="_blank" rel="noopener noreferrer" aria-label="https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/">
+          <a class="contact-card" href="https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/" target="_blank" rel="noopener noreferrer">
             <span class="icon-linkedin"></span>
             <div>
               <h3>LinkedIn</h3>
               <p>Ver perfil</p>
             </div>
           </a>
-          <a class="contact-card" href="https://github.com/I-Bovingdon" target="_blank" rel="noopener noreferrer" aria-label="https://github.com/I-Bovingdon">
+          <a class="contact-card" href="https://github.com/I-Bovingdon" target="_blank" rel="noopener noreferrer">
             <span class="icon-github"></span>
             <div>
               <h3>GitHub</h3>
@@ -284,7 +374,7 @@
               <p>Remoto / Madrid, España</p>
             </div>
           </div>
-          <a class="contact-card" href="assets/CV_Ismael_Bovingdon_2026_ATS.pdf" download aria-label="Descargar CV Ismael Bovingdon">
+          <a class="contact-card" href="assets/CV_Ismael_Bovingdon_2026_ATS.pdf" download>
             <span class="icon-pdf"></span>
             <div>
               <h3>Descargar CV</h3>
@@ -302,7 +392,41 @@
     </div>
   </footer>
 
+  <!-- Modal: Pump It Up Deployment -->
+  <div id="modal-pumpitup" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Deployment — Pump It Up">
+    <div class="modal-box">
+      <button class="modal-close" onclick="document.getElementById('modal-pumpitup').classList.remove('open')" aria-label="Cerrar">×</button>
+      <p class="modal-subtitle">ML · IA Generativa · Interfaces</p>
+      <p class="modal-title">Pump It Up — Interfaces de deployment</p>
+      <div class="modal-images">
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/I-Bovingdon/MachineLearning_Pipeline_WaterInfrastructure_Agentic_EDA/main/images/EDA%26Predictor.png"
+            alt="Annex B — EDA Explorer & Individual Predictor (Gradio)"
+          />
+          <p class="modal-caption">Annex B — Explorador EDA y predictor individual (Gradio, puerto 7860)</p>
+        </div>
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/I-Bovingdon/MachineLearning_Pipeline_WaterInfrastructure_Agentic_EDA/main/images/LLM%20Assistant.png"
+            alt="Annex C — Asistente conversacional IA (Claude API)"
+          />
+          <p class="modal-caption">Annex C — Asistente conversacional IA con API de Claude (puerto 7862)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
+    // Cerrar modal al hacer clic fuera del box
+    document.getElementById('modal-pumpitup').addEventListener('click', function(e) {
+      if (e.target === this) this.classList.remove('open');
+    });
+    // Cerrar modal con Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') document.getElementById('modal-pumpitup').classList.remove('open');
+    });
+
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     accordionHeaders.forEach((header) => {
       header.addEventListener('click', () => {

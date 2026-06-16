@@ -185,9 +185,7 @@
               <span>LangChain / LangGraph</span>
               <span>scikit-learn</span>
               <span>systemd · Linux</span>
-              <span>rclone · Google Drive</span>
               <span>GTFS-Realtime</span>
-              <span>Parquet · Pandas</span>
               <span>Gradio</span>
             </div>
             <ul class="pce-impact">
@@ -223,7 +221,6 @@
               <span>OpenAI API</span>
               <span>Anthropic API</span>
               <span>Agentes de IA</span>
-              <span>Infraestructura 24/7</span>
               <span>MLOps básico</span>
             </div>
             <ul class="pce-impact pce-impact--orange">
@@ -266,18 +263,15 @@
             <div class="pce-stack">
               <span>Python</span>
               <span>GTFS-Realtime</span>
-              <span>Parquet</span>
-              <span>Pandas</span>
               <span>systemd</span>
               <span>Linux VPS</span>
-              <span>rclone</span>
-              <span>AEMET API</span>
-              <span>XGBoost / LightGBM</span>
+              <span>GitHub / rclone</span>
+              <span>Apache Spark</span>
               <span>LSTM / GRU</span>
             </div>
             <ul class="pce-impact">
               <li>Pipeline de ingesta multifuente operativo 24/7 en producción</li>
-              <li>+320.000 registros capturados en el primer día</li>
+              <li>+320.000 registros capturados al día</li>
               <li>Arquitectura raw → Parquet → backup automático a Drive</li>
               <li>Resiliencia verificada: reinicio automático con systemd</li>
             </ul>
@@ -302,12 +296,11 @@
                 <h3 class="pce-title">Pump It Up — Predicción de bombas de agua (Tanzania)</h3>
               </div>
             </div>
-            <p class="pce-description">Pipeline ML completo sobre 59.000 bombas de agua en Tanzania: de la clasificación con ensemble ponderado (0.823 en leaderboard) a dos interfaces de uso real — predictor individual con Gradio y asistente conversacional con la API de Claude.</p>
+            <p class="pce-description">Pipeline ML completo sobre 59.000 bombas de agua en Tanzania: de la clasificación con ensemble ponderado a dos interfaces de uso real — predictor individual con Gradio y asistente conversacional con la API de Claude.</p>
             <div class="pce-stack">
               <span>Python</span>
               <span>scikit-learn</span>
-              <span>XGBoost</span>
-              <span>LightGBM</span>
+              <span>XGBoost / LightGBM</span>
               <span>LangGraph</span>
               <span>Anthropic API</span>
               <span>Gradio</span>
@@ -316,7 +309,7 @@
               <span>Matplotlib</span>
             </div>
             <ul class="pce-impact">
-              <li>0.8230 de accuracy en el leaderboard de DrivenData</li>
+              <li>Accuracy global engaña: la clase crítica es el 7,3%</li>
               <li>Detección x2 de bombas reparables frente a modelos base</li>
               <li>Predictor individual en vivo con probabilidad por clase</li>
               <li>Asistente IA conversacional sobre los resultados del análisis</li>
@@ -324,7 +317,7 @@
             <div class="pce-actions">
               <a class="pce-btn pce-btn--primary" href="https://github.com/I-Bovingdon/MachineLearning_Pipeline_WaterInfrastructure_Agentic_EDA/blob/main/README.md" target="_blank" rel="noopener">Ver arquitectura</a>
               <a class="pce-btn" href="https://github.com/I-Bovingdon/MachineLearning_Pipeline_WaterInfrastructure_Agentic_EDA" target="_blank" rel="noopener">GitHub</a>
-              <button class="pce-btn" onclick="document.getElementById('modal-pumpitup').classList.add('open')">Deployment</button>
+              <button class="pce-btn" onclick="document.getElementById('modal-pumpitup').classList.add('open')">Despliegues</button>
             </div>
           </article>
 
@@ -404,14 +397,14 @@
             src="https://raw.githubusercontent.com/I-Bovingdon/MachineLearning_Pipeline_WaterInfrastructure_Agentic_EDA/main/images/EDA%26Predictor.png"
             alt="Annex B — EDA Explorer & Individual Predictor (Gradio)"
           />
-          <p class="modal-caption">Annex B — Explorador EDA y predictor individual (Gradio, puerto 7860)</p>
+          <p class="modal-caption">Annex B — Explorador EDA y predictor individual con Gradio</p>
         </div>
         <div>
           <img
             src="https://raw.githubusercontent.com/I-Bovingdon/MachineLearning_Pipeline_WaterInfrastructure_Agentic_EDA/main/images/LLM%20Assistant.png"
             alt="Annex C — Asistente conversacional IA (Claude API)"
           />
-          <p class="modal-caption">Annex C — Asistente conversacional IA con API de Claude (puerto 7862)</p>
+          <p class="modal-caption">Annex C — Asistente conversacional IA con API de Claude</p>
         </div>
       </div>
     </div>

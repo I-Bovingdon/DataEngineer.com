@@ -19,8 +19,8 @@ https://i-bovingdon.github.io/DataEngineer.com/index-en.html
 ├── styles.css               # Shared stylesheet
 └── assets/
     ├── profile.png                        # Profile photo
-    ├── CV_Ismael_Bovingdon_2026_ATS.pdf   # Spanish CV
-    └── CV_en_Ismael_Bovingdon_2026_ATS.pdf # English CV
+    ├── CV_Ismael_Bovingdon_ES.pdf         # Spanish CV
+    └── CV_Ismael_Bovingdon_EN.pdf         # English CV
 ```
 
 ---

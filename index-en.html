@@ -76,8 +76,22 @@
       text-align: center;
       margin-top: 0.3rem;
     }
+    .modal-pdf-frame {
+      width: 100%;
+      height: 72vh;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      background: #0a1730;
+    }
+    .modal-pdf-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
     @media (max-width: 600px) {
       .modal-images { grid-template-columns: 1fr; }
+      .modal-pdf-frame { height: 60vh; }
     }
   </style>
 </head>
@@ -278,7 +292,7 @@
             <div class="pce-actions">
               <a class="pce-btn pce-btn--primary" href="https://github.com/I-Bovingdon/tfm-cercanias-colectores/blob/main/README.md" target="_blank" rel="noopener">View architecture</a>
               <a class="pce-btn" href="https://github.com/I-Bovingdon/tfm-cercanias-colectores" target="_blank" rel="noopener">GitHub</a>
-              <a class="pce-btn" href="https://github.com/I-Bovingdon/tfm-cercanias-colectores/blob/main/Estructura_Datos_TFM_Cercanias.pdf" target="_blank" rel="noopener">Data structure</a>
+              <button class="pce-btn" onclick="document.getElementById('modal-renfe-pdf').classList.add('open')">Data structure</button>
             </div>
           </article>
 
@@ -410,14 +424,32 @@
     </div>
   </div>
 
+  <!-- Modal: RENFE Data Structure (PDF) -->
+  <div id="modal-renfe-pdf" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Data structure — TFM Cercanías">
+    <div class="modal-box">
+      <button class="modal-close" onclick="document.getElementById('modal-renfe-pdf').classList.remove('open')" aria-label="Close">×</button>
+      <p class="modal-subtitle">Data Engineering · Real-time · ML</p>
+      <p class="modal-title">TFM Cercanías — Capture pipeline data structure</p>
+      <iframe class="modal-pdf-frame" src="assets/Estructura_Datos_TFM_Cercanias.pdf#view=FitH" title="Data structure — TFM Cercanías (PDF)" loading="lazy"></iframe>
+      <div class="modal-pdf-actions">
+        <a class="pce-btn" href="assets/Estructura_Datos_TFM_Cercanias.pdf" target="_blank" rel="noopener">Open in new tab</a>
+        <a class="pce-btn" href="https://github.com/I-Bovingdon/tfm-cercanias-colectores/blob/main/Estructura_Datos_TFM_Cercanias.pdf" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
   <script>
-    // Close modal on outside click
-    document.getElementById('modal-pumpitup').addEventListener('click', function(e) {
-      if (e.target === this) this.classList.remove('open');
+    // Close any modal on outside click
+    document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) overlay.classList.remove('open');
+      });
     });
-    // Close modal on Escape
+    // Close modals on Escape
     document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') document.getElementById('modal-pumpitup').classList.remove('open');
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.open').forEach(function(o) { o.classList.remove('open'); });
+      }
     });
 
     const accordionHeaders = document.querySelectorAll('.accordion-header');

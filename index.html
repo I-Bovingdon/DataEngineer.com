@@ -134,9 +134,9 @@
           <p class="eyebrow">Data Engineering | Cloud | Business Intelligence </p>
           <h2>Transformando datos en soluciones escalables y profesionales</h2>
           <p class="hero-text">
-            Ingeniero de datos especializado en el desarrollo de pipelines ETL con Azure Data Factory, SQL y Python. 
-            Cuenta con 4 años de experiencia en sistemas financieros de alto volumen en BBVA. 
-            Actualmente en Babel y finalizando un máster en Ciencia de Datos (UCM).
+            Ingeniero de datos con experiencia en pipelines ETL con Azure Data Factory, SQL y Python,
+            y 4 años en sistemas financieros de alto volumen en BBVA.
+            Máster en Data Science por la UCM (2026), con un sistema de datos 24/7 en producción como proyecto final.
           </p>
           <div class="hero-actions">
             <a class="cta-button accent" href="#contact">
@@ -167,9 +167,9 @@
           <h2>Profesional enfocado en datos, cloud y BI</h2>
         </div>
         <div class="about-copy">
-          <p>Data Engineer en Babel, donde construyo procesos ETL end-to-end con Azure Data Factory y SQL Server y desarrollo dashboards en Power BI para clientes financieros e industriales, mientras curso el Máster en Data Science, Big Data & Business Analytics en la Universidad Complutense de Madrid.</p>
+          <p>En Babel he construido procesos ETL end-to-end con Azure Data Factory y SQL Server y dashboards en Power BI para clientes financieros e industriales. En septiembre de 2026 terminé el Máster en Data Science, Big Data & Business Analytics de la Universidad Complutense de Madrid.</p>
           <p>Antes de dedicarme a la ingeniería de datos, pasé 4 años en BBVA Technology desarrollando aplicaciones financieras batch y online sobre sistemas críticos de alta disponibilidad, trabajando con bases de datos DB2/SQL con millones de registros.</p>
-          <p>Fuera del trabajo, diseño y opero infraestructura de datos real: un pipeline de ingesta 24/7 que captura más de 320.000 registros diarios en un VPS Linux, y pipelines de ML end-to-end con agentes basados en LLMs. Mi formación como ingeniero industrial me aporta una visión sistémica de la arquitectura de datos.</p>
+          <p>En el trabajo de fin de máster diseñé y operé infraestructura de datos real: un sistema de captura 24/7 en un servidor Linux que reunió 12 millones de registros en 92 días y una aplicación web pública de predicción de retrasos. También he desarrollado pipelines de ML end-to-end con agentes basados en LLMs. Mi formación como ingeniero industrial me aporta una visión sistémica de la arquitectura de datos.</p>
         </div>
       </div>
     </section>
@@ -268,7 +268,7 @@
 
         <div class="project-cards-grid">
 
-          <!-- Card 1 — TFM Cercanías RENFE -->
+          <!-- Card 1 — TFM Cercanías Madrid -->
           <article class="project-card-enterprise">
             <div class="pce-glow pce-glow--blue"></div>
             <div class="pce-header">
@@ -278,30 +278,34 @@
                 </svg>
               </div>
               <div class="pce-meta">
-                <span class="pce-category">Data Engineering · Tiempo Real · ML</span>
-                <h3 class="pce-title">Predicción de retrasos en Cercanías Madrid (RENFE)</h3>
+                <span class="pce-category">Data Engineering · Tiempo real · ML en producción</span>
+                <h3 class="pce-title">Predicción de retrasos en Cercanías Madrid</h3>
               </div>
             </div>
-            <p class="pce-description">Pipeline 24/7 desplegado en VPS que captura feeds GTFS-Realtime de RENFE y datos AEMET para construir desde cero el histórico de retrasos — dato que RENFE no publica — con el que entrenar un modelo predictivo.</p>
+            <p class="pce-description">Renfe informa del retraso cuando ya se está produciendo y no publica histórico. Construí la captura 24/7 que crea ese histórico y la aplicación web pública que lo convierte en una predicción de llegada. Trabajo de fin de máster (UCM) en equipo de tres: mi parte fue la infraestructura, la captura y la aplicación.</p>
             <div class="pce-stack">
               <span>Python</span>
               <span>GTFS-Realtime</span>
-              <span>systemd</span>
-              <span>Linux VPS</span>
-              <span>GitHub / rclone</span>
-              <span>Apache Spark</span>
-              <span>LSTM / GRU</span>
+              <span>API AEMET</span>
+              <span>Parquet</span>
+              <span>systemd · Linux</span>
+              <span>FastAPI</span>
+              <span>Databricks · MLflow</span>
+              <span>LightGBM</span>
+              <span>rclone</span>
             </div>
             <ul class="pce-impact">
-              <li>Pipeline de ingesta multifuente operativo 24/7 en producción</li>
-              <li>+320.000 registros capturados al día</li>
-              <li>Arquitectura raw → Parquet → backup automático a Drive</li>
-              <li>Resiliencia verificada: reinicio automático con systemd</li>
+              <li>12 millones de registros en 92 días, capturados cada minuto en un servidor de unos 5 €/mes</li>
+              <li>Capa bruta inmutable, capa analítica en Parquet y copia diaria en la nube</li>
+              <li>Vigilancia de contenido: aviso en 10 minutos si una fuente deja de tener sentido</li>
+              <li>Modelo LightGBM: error de 283,2 a 147,7 s frente a la referencia histórica (−48 %)</li>
+              <li>Con trenes reales: 6,18 min de error frente a 9,08 del horario oficial</li>
             </ul>
             <div class="pce-actions">
-              <a class="pce-btn pce-btn--primary" href="https://github.com/I-Bovingdon/Renfe-delay-prediction-pipeline/blob/main/README.md" target="_blank" rel="noopener">Ver arquitectura</a>
-              <a class="pce-btn" href="https://github.com/I-Bovingdon/Renfe-delay-prediction-pipeline" target="_blank" rel="noopener">GitHub</a>
-              <button class="pce-btn" onclick="document.getElementById('modal-renfe-pdf').classList.add('open')">Estructura de datos</button>
+              <a class="pce-btn pce-btn--primary" href="https://cercanias-madrid.es" target="_blank" rel="noopener">Ver la app</a>
+              <button class="pce-btn" onclick="document.getElementById('modal-renfe').classList.add('open')">Arquitectura</button>
+              <a class="pce-btn" href="https://github.com/I-Bovingdon/Renfe-delay-pipeline" target="_blank" rel="noopener">GitHub · Captura</a>
+              <a class="pce-btn" href="https://github.com/I-Bovingdon/renfe-delay-app" target="_blank" rel="noopener">GitHub · App</a>
             </div>
           </article>
 
@@ -404,7 +408,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Ismael Bovingdon Castillejo - Turning raw data into reliable pipelines.</p>
+      <p>Ismael Bovingdon Castillejo · Convierto datos en bruto en pipelines fiables.</p>
     </div>
   </footer>
 
@@ -433,16 +437,19 @@
     </div>
   </div>
 
-  <!-- Modal: RENFE Estructura de datos (PDF) -->
-  <div id="modal-renfe-pdf" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Estructura de datos — TFM Cercanías">
+  <!-- Modal: TFM Cercanías, arquitectura -->
+  <div id="modal-renfe" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Arquitectura — TFM Cercanías">
     <div class="modal-box">
-      <button class="modal-close" onclick="document.getElementById('modal-renfe-pdf').classList.remove('open')" aria-label="Cerrar">×</button>
-      <p class="modal-subtitle">Data Engineering · Real-time · ML</p>
-      <p class="modal-title">TFM Cercanías — Estructura de datos del pipeline de captura</p>
-      <iframe class="modal-pdf-frame" src="assets/Estructura_Datos_TFM_Cercanias.pdf#view=FitH" title="Estructura de datos — TFM Cercanías (PDF)" loading="lazy"></iframe>
+      <button class="modal-close" onclick="document.getElementById('modal-renfe').classList.remove('open')" aria-label="Cerrar">×</button>
+      <p class="modal-subtitle">Data Engineering · Tiempo real · ML en producción</p>
+      <p class="modal-title">TFM Cercanías: de la captura 24/7 a la aplicación pública</p>
+      <img src="assets/arquitectura_tfm.png" alt="Arquitectura del sistema: fuentes, servidor propio, usos y aplicación" style="width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.08);" loading="lazy" />
+      <p class="modal-caption">Limitación conocida: el modelo no anticipa bien los retrasos altos y solo cubre trayectos directos. La causa está identificada y documentada.</p>
       <div class="modal-pdf-actions">
-        <a class="pce-btn" href="assets/Estructura_Datos_TFM_Cercanias.pdf" target="_blank" rel="noopener">Abrir en pestaña nueva</a>
-        <a class="pce-btn" href="https://github.com/I-Bovingdon/Renfe-delay-prediction-pipeline/blob/main/Estructura_Datos_TFM_Cercanias.pdf" target="_blank" rel="noopener">Ver en GitHub</a>
+        <a class="pce-btn pce-btn--primary" href="https://cercanias-madrid.es" target="_blank" rel="noopener">Ver la app</a>
+        <a class="pce-btn" href="assets/Estructura_Datos_TFM_Cercanias.pdf" target="_blank" rel="noopener">Esquemas de datos (PDF)</a>
+        <a class="pce-btn" href="https://github.com/I-Bovingdon/Renfe-delay-pipeline" target="_blank" rel="noopener">GitHub · Captura</a>
+        <a class="pce-btn" href="https://github.com/I-Bovingdon/renfe-delay-app" target="_blank" rel="noopener">GitHub · App</a>
       </div>
     </div>
   </div>

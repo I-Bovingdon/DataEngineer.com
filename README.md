@@ -1,10 +1,8 @@
 # Ismael Bovingdon Castillejo — Portfolio Website
 
-Personal portfolio site for a Junior Data Engineer, built as a static site ready to deploy on GitHub Pages. The site is fully bilingual (Spanish / English) and covers professional background, technical stack, projects, and contact information.
+Personal portfolio site for a Data Engineer, built as a static site ready to deploy on GitHub Pages. The site is fully bilingual (Spanish / English) and covers professional background, technical stack, projects, and contact information.
 
-**Live site:** `https://i-bovingdon.github.io` *(once deployed)*
-
-https://i-bovingdon.github.io/DataEngineer.com/index-en.html
+**Live site:** https://i-bovingdon.github.io/DataEngineer.com/ (English: [index-en.html](https://i-bovingdon.github.io/DataEngineer.com/index-en.html))
 
 [![image](https://github.com/user-attachments/assets/2420c432-315d-4e9c-a565-49e58f2fde12)](https://i-bovingdon.github.io/DataEngineer.com/index-en.html)
 
@@ -18,7 +16,11 @@ https://i-bovingdon.github.io/DataEngineer.com/index-en.html
 ├── index-en.html            # English version
 ├── styles.css               # Shared stylesheet
 └── assets/
-    ├── profile.png                        # Profile photo
+    ├── profile.webp                       # Profile photo
+    ├── header/about/skills/projects/footer.webp  # Section backgrounds
+    ├── og-image.jpg                       # Link preview image (1200x630)
+    ├── arquitectura_tfm.png               # TFM architecture diagram
+    ├── Estructura_Datos_TFM_Cercanias.pdf # TFM data schemas
     ├── CV_Ismael_Bovingdon_ES.pdf         # Spanish CV
     └── CV_Ismael_Bovingdon_EN.pdf         # English CV
 ```
@@ -28,7 +30,7 @@ https://i-bovingdon.github.io/DataEngineer.com/index-en.html
 ## Features
 
 - **Bilingual** — Spanish (`index.html`) and English (`index-en.html`) with a language toggle in the nav bar.
-- **Sections** — Hero, About, Technical Stack & Skills, Projects, Contact.
+- **Sections** — Hero, About, Experience, Stack & Education, Projects, Contact.
 - **Project cards** — Enterprise-style cards with tech stack tags, impact bullet points, and action buttons (architecture, GitHub, dashboard).
 - **Contact grid** — Phone, email, LinkedIn, GitHub, location, and CV download.
 - **Fully static** — No build tools, no frameworks, no dependencies. Pure HTML + CSS + vanilla JS.
@@ -51,7 +53,7 @@ https://i-bovingdon.github.io/DataEngineer.com/index-en.html
 
 | What | Where |
 |---|---|
-| Profile photo | Replace `assets/profile.png` |
+| Profile photo | Replace `assets/profile.webp` |
 | CV files | Replace the two PDFs in `assets/` keeping the same filenames |
 | Colors / fonts | Edit CSS variables at the top of `styles.css` |
 | Project cards | Edit the `<article class="project-card-enterprise">` blocks in both HTML files |

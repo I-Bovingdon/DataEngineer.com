@@ -1,4 +1,4 @@
-# Ismael Bovingdon Castillejo — Portfolio Website
+# Ismael Bovingdon Castillejo | Portfolio Website
 
 Personal portfolio site for a Data Engineer, built as a static site ready to deploy on GitHub Pages. The site is fully bilingual (Spanish / English) and covers professional background, technical stack, projects, and contact information.
 
@@ -29,12 +29,12 @@ Personal portfolio site for a Data Engineer, built as a static site ready to dep
 
 ## Features
 
-- **Bilingual** — Spanish (`index.html`) and English (`index-en.html`) with a language toggle in the nav bar.
-- **Sections** — Hero, About, Experience, Stack & Education, Projects, Contact.
-- **Project cards** — Enterprise-style cards with tech stack tags, impact bullet points, and action buttons (architecture, GitHub, dashboard).
-- **Contact grid** — Phone, email, LinkedIn, GitHub, location, and CV download.
-- **Fully static** — No build tools, no frameworks, no dependencies. Pure HTML + CSS + vanilla JS.
-- **GitHub Pages ready** — Deploy directly from the repository root.
+- **Bilingual**: Spanish (`index.html`) and English (`index-en.html`) with a language toggle in the nav bar.
+- **Sections**: Hero, About, Experience, Stack & Education, Projects, Contact.
+- **Project cards**: Enterprise-style cards with tech stack tags, impact bullet points, and action buttons (architecture, GitHub, dashboard).
+- **Contact grid**: Phone, email, LinkedIn, GitHub, location, and CV download.
+- **Fully static**: No build tools, no frameworks, no dependencies. Pure HTML + CSS + vanilla JS.
+- **GitHub Pages ready**: Deploy directly from the repository root.
 
 ---
 
@@ -54,7 +54,7 @@ Personal portfolio site for a Data Engineer, built as a static site ready to dep
 | What | Where |
 |---|---|
 | Profile photo | Replace `assets/profile.webp` |
-| CV files | Replace the two PDFs in `assets/` keeping the same filenames |
+| CV files | Replace the two PDFs in `assets/` keeping the same filenames (source: CV base ES/EN, Oct 2026) |
 | Colors / fonts | Edit CSS variables at the top of `styles.css` |
 | Project cards | Edit the `<article class="project-card-enterprise">` blocks in both HTML files |
 | Contact details | Edit the `#contact` section in both HTML files |
@@ -64,11 +64,11 @@ Personal portfolio site for a Data Engineer, built as a static site ready to dep
 ## Tech
 
 - HTML5 / CSS3 / Vanilla JS
-- No build step — open `index.html` in a browser to preview locally
+- No build step: open `index.html` in a browser to preview locally
 
 ---
 
 ## Author
 
-**Ismael Bovingdon Castillejo** — Junior Data Engineer  
-[LinkedIn](https://www.linkedin.com/in/ismael-bovingdon-castillejo-6a775074/) · [GitHub](https://github.com/I-Bovingdon) · ishmaelbovingdon@gmail.com
+**Ismael Bovingdon Castillejo**, Junior Data Engineer  
+[LinkedIn](https://www.linkedin.com/in/ismael-bovingdon/) · [GitHub](https://github.com/I-Bovingdon) · ishmaelbovingdon@gmail.com

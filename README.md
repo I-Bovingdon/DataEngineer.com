@@ -1,6 +1,6 @@
 # Ismael Bovingdon Castillejo | Portfolio Website
 
-Personal portfolio site for a Data Engineer, built as a static site ready to deploy on GitHub Pages. The site is fully bilingual (Spanish / English) and covers professional background, technical stack, projects, and contact information.
+Personal portfolio site for a Data Engineer with 4 years of production data processing in banking (BBVA: SQL on DB2, Spark with Scala and PySpark), 12 months with Azure Data Factory, Microsoft Fabric and Power BI at Babel, and an award-winning 24/7 data capture (MSc thesis, UCM). Built as a static site ready to deploy on GitHub Pages. The site is fully bilingual (Spanish / English) and covers professional background, technical stack, projects, and contact information.
 
 **Live site:** https://i-bovingdon.github.io/DataEngineer.com/ (English: [index-en.html](https://i-bovingdon.github.io/DataEngineer.com/index-en.html))
 
@@ -14,15 +14,15 @@ Personal portfolio site for a Data Engineer, built as a static site ready to dep
 /
 ├── index.html               # Spanish version (default)
 ├── index-en.html            # English version
-├── styles.css               # Shared stylesheet
+├── styles.css               # Shared stylesheet (includes modal styles)
 └── assets/
     ├── profile.webp                       # Profile photo
     ├── header/about/skills/projects/footer.webp  # Section backgrounds
     ├── og-image.jpg                       # Link preview image (1200x630)
     ├── arquitectura_tfm.png               # TFM architecture diagram
     ├── Estructura_Datos_TFM_Cercanias.pdf # TFM data schemas
-    ├── CV_Ismael_Bovingdon_ES.pdf         # Spanish CV
-    └── CV_Ismael_Bovingdon_EN.pdf         # English CV
+    ├── CV_Ismael_Bovingdon_ES.pdf         # Spanish CV (Data base CV)
+    └── CV_Ismael_Bovingdon_EN.pdf         # English CV (Data base CV)
 ```
 
 ---
@@ -54,8 +54,9 @@ Personal portfolio site for a Data Engineer, built as a static site ready to dep
 | What | Where |
 |---|---|
 | Profile photo | Replace `assets/profile.webp` |
-| CV files | Replace the two PDFs in `assets/` keeping the same filenames (source: CV base ES/EN, Oct 2026) |
+| CV files | Replace the two PDFs in `assets/` keeping the same filenames (source: Data base CV ES/EN, Nov 2026) |
 | Colors / fonts | Edit CSS variables at the top of `styles.css` |
+| Modal styles | Bottom of `styles.css` (no inline `<style>` in the HTML files) |
 | Project cards | Edit the `<article class="project-card-enterprise">` blocks in both HTML files |
 | Contact details | Edit the `#contact` section in both HTML files |
 
@@ -70,5 +71,5 @@ Personal portfolio site for a Data Engineer, built as a static site ready to dep
 
 ## Author
 
-**Ismael Bovingdon Castillejo**, Junior Data Engineer  
+**Ismael Bovingdon Castillejo**, Data Engineer  
 [LinkedIn](https://www.linkedin.com/in/ismael-bovingdon/) · [GitHub](https://github.com/I-Bovingdon) · ishmaelbovingdon@gmail.com
